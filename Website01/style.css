@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.one .wrapper{
+    width:80%;
+    height: 75%;
+    margin: auto;
+    background-image: url(./spiral.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .logo{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo svg{
+    width: 2rem;
+}
+
+.logo h2{
+    margin-top: 4px;
+    font-size: 1.2rem;
+}
+
+.wrapper h1{
+    font-size: 7rem;
+    text-align: center;
+    line-height: 7rem;
+    font-weight: 700;
+}
+
+.wrapper button{
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.two .wrapper-two{
+    width:90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.wrapper-two .left{
+    width: 50%;
+}
+
+.left h1{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.left p{
+    font-size: 1.1rem;
+}
+
+.left button{
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: #000;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.left button:hover{
+    box-shadow: 2px 5px 10px rgba(255,255,255,200);
+}
+
+.wrapper-two .right{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-two .right img{
+    height: 90vh;
+    margin-left: 4rem;
+    border-radius: 50px;
+}
+
+.two > img{
+    position: absolute;
+    height: 175 px;
+    bottom: 10vh;
+    right: 40%;
+}
+
+.three{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.three .wrapper-three{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    gap: 5rem;
+}
+
+.wrapper-three img{
+    height: 75vh;
+}
+
+.wrapper-three .left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 0;
+}
+
+.wrapper-three .left img{
+    position: absolute;
+}
+
+.wrapper-three .left .txt{
+    background-color: rgb(248, 120, 205);
+    position: absolute;
+    height: 70%;
+    width: 65%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(248, 120, 205, 0.69);
+}
+
+.wrapper-three .left .txt .line{
+    height: 2px;
+    width: 90%;
+    background-color: #000;
+}
+
+.wrapper-three .left .txt h2{
+    font-size: 2rem;
+    margin: 0.9rem 0;
+}
+
+.wrapper-three .left .txt h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.wrapper-three .left .txt p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.wrapper-three .right{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.wrapper-three .right img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wrapper-three .right .txt{
+    background-color: #F878CD;
+    position: absolute;
+    width: 65%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(248, 120, 205, 0.69);
+}
+
+.wrapper-three .right .txt .line{
+    height: 2px;
+    width: 90%;
+    background-color: #000;
+}
+
+.wrapper-three .right .txt h2{
+    font-size: 2rem;
+    margin: 0.9rem 0;
+}
+
+.wrapper-three .right .txt h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.wrapper-three .right .txt p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.four{
+    width: 100%;
+    height: 100vh;
+    background-color: #0B6380;
+    color: #fff;
+}
+
+.four .wrapper-four{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapper-four h1{
+    font-size: 5rem;
+}
+
+.founder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.founder img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20px 0 0 0;
+    margin-bottom: 0.5rem;
+}
+
+.founder h5{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+}
+
+.founder p{
+    font-size: 1.1rem;
+}
+
+.five{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-five{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapper-five .left{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.wrapper-five .left .txt h1{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.wrapper-five .left .txt p{
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.wrapper-five .left .element{
+    width: 60%;
+    height: 50%;
+    position: relative;
+    margin: 1.2rem;
+}
+
+.wrapper-five .left .element img{
+    width: 50%;
+    top: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.element #hand{
+    top: 20%;
+    left: 5rem;
+}
+
+.wrapper-five .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+.wrapper-five .right span{
+    background-color: #000;
+    height: 2px;
+    width: 70%;
+    margin: 1.5rem 0;
+}
+
+.wrapper-five .right .txt{
+    width: 70%;
+    padding-right: 2.5rem;
+}
+
+.wrapper-five .right .txt h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.wrapper-five .right .txt p{
+    font-size: 1.2rem;
+}
+
+.six{
+    width: 100%;
+    height: 100vh;
+    background-color: #F878CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.six .wrapper-six{
+    height: 75vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-six .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wrapper-six .left .top{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wrapper-six .left .top .logo{
+    display: flex;
+    gap: 1.1rem;
+}
+
+.top .logo svg{
+    width: 2.5rem;
+}
+
+.top .logo h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.top .txt{
+    width: 75%;
+}
+
+.top .txt h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.top .txt p{
+    font-size: 1.1rem;
+}
+
+.top .txt button{
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper-six .left .bottom{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.left .bottom p{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 1.2rem;
+}
+
+.left .bottom i{
+    font-size: 1.8rem;
+    margin: 0.2rem;
+}
+
+.left .bottom i:hover{
+    color: #fff;
+}
+
+.wrapper-six .right{
+    width: 50%;
+    height: 100vh;
+    background-image: url(./spiral2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-six .right svg{
+    padding-left: 25%;
+    scale: 1.9;
+}
