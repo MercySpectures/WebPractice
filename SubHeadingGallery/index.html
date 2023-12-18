@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap');
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px 20px 20px 40px;
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .heading {
+            font-size: 3.2rem;
+            padding: 1rem 1rem 1rem 0;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subheading {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin-bottom: 5px;
+            cursor: pointer;
+            padding: 0.2rem 0;
+        }
+
+        .paragraph {
+            font-size: 1rem;
+            font-weight: normal;
+            display: none;
+            padding: 0.4rem 0;
+        }
+
+        .left .link{
+            margin: 3rem 0;
+        }
+
+        .left a{
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="heading">This is the heading</div>
+            <div class="subheading" onclick="showParagraph(1)">This is the first subheading</div>
+            <div class="paragraph" id="paragraph-1">This is the paragraph for the first subheading. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="subheading" onclick="showParagraph(2)">This is the second subheading</div>
+            <div class="paragraph" id="paragraph-2">This is the paragraph for the second subheading. Quisque quis nisi quis lorem sagittis vehicula.</div>
+            <div class="subheading" onclick="showParagraph(3)">This is the third subheading</div>
+            <div class="paragraph" id="paragraph-3">This is the paragraph for the third subheading. Sed in nisl eu leo ullamcorper fermentum.</div>
+            <div class="subheading" onclick="showParagraph(4)">This is the fourth subheading</div>
+            <div class="paragraph" id="paragraph-4">This is the paragraph for the fourth subheading. Aenean vitae neque quis augue consequat varius.</div>
+            <div class="subheading" onclick="showParagraph(5)">This is the fifth subheading</div>
+            <div class="paragraph" id="paragraph-5">This is the paragraph for the fifth subheading. Fusce ac lacus quis magna mattis tincidunt.</div>
+
+            <div class="link">
+                <a href="https://www.linkedin.com/in/aman-shrivas-97407014a/">Mercy Spectures</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="image-1.jpg" class="image" id="image">
+        </div>
+    </div>
+    <script>
+        function showParagraph(index) {
+            // hide all paragraphs
+            var paragraphs = document.getElementsByClassName("paragraph");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.display = "none";
+            }
+            // show the selected paragraph
+            var paragraph = document.getElementById("paragraph-" + index);
+            paragraph.style.display = "block";
+            // change the image source
+            var image = document.getElementById("image");
+            image.src = "image-" + index + ".jpg";
+        }
+    </script>
+</body>
+</html>
