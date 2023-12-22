@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+.wrapper{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    width: 370px;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+.card:hover{
+    box-shadow: 12px 12px 0;
+}
+
+.card svg{
+    border-radius: 1rem;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000;
+    background-color: hsl(47, 88%, 63%);
+    margin: 1rem 0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    font-weight: 800;
+}
+
+.card h4{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: hsl(47, 88%, 63%);
+    margin-bottom: 1rem;
+}
+
+.card p{
+    color: rgb(128, 128, 128);
+    margin-bottom: 1rem;
+}
+
+.card .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.bottom img{
+    width: 2.6rem;
+}
+
+.bottom h3{
+    font-size: 16px;
+}
