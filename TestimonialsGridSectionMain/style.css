@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 99%);
+}
+
+.box{
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card .top img{
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.top .name{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name h4{
+    font-size: 1rem;
+}
+
+.name h4#light{
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+}
+
+.card .bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-direction: column;
+}
+
+.card .bottom h1{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card .bottom p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+.one{
+    grid-column: span 2;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 1rem;
+    background-position-x: 22rem;
+}
+
+.two{
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+}
+
+.three{
+    grid-row: span 2;
+    background-color: #fff;
+    color: #000;
+}
+
+.four{
+    background-color: #fff;
+    color: #000;
+}
+
+.five{
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
+    color: #fff;
+}
+
+
+@media only screen and (max-width:375px) {
+    .box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .one, .three, .five{
+        grid-area: span 1;
+    }
+}
