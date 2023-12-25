@@ -83,7 +83,7 @@
 
 .right img{
     object-fit: cover;
-    width: 105%;
+    height: 100%;
     mix-blend-mode: multiply;
 }
 
