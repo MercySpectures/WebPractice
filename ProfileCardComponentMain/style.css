@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.wrapper .background{
+    position: relative;
+}
+
+.background img{
+    position: absolute;
+    width: 50%;
+}
+
+.background img#one{
+    left: 0;
+    top: 0;
+    transform: translate(-20%, -50%);
+}
+
+.background img#two{
+    right: 0;
+    transform: translate(20%, 50%);
+}
+
+.wrapper .box{
+    position: absolute;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.bottom img{
+    top: 0%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    margin-bottom: -25px;
+}
+
+.bottom h2{
+    font-size: 1.3rem;
+}
+
+.bottom span#light{
+    font-weight: 300;
+    margin-left: 0.5rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.bottom>p{
+    color: hsl(227, 10%, 46%);
+    margin: 0.5rem 0 2rem 0;
+}
+
+span#line{
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.details .sm-bx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1.3rem 0;
+}
+
+.details p{
+    font-size: 0.8rem;
+    color: hsl(227, 10%, 46%);
+}
+
+@media screen and (max-width:460px){
+    .wrapper .background{
+        height: 100vh;
+    }
+
+    .background img{
+        width: 100%;
+    }
+    
+    .background img#one{
+        transform: translate(-50%, -50%);
+}
+    
+    .background img#two{
+        right: 0;
+        bottom: 0; 
+        transform: translate(50%, 50%);
+}
+    
+}
