@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500&family=Syne&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF6E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    padding: 3rem;
+}
+
+.bgLines {
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.1rem solid #124559;
+    border-radius: 50%;
+}
+
+span.line:nth-child(1) {
+    transform: rotate(11deg);
+}
+
+span.line:nth-child(2) {
+    transform: rotate(-12deg);
+}
+
+span.line:nth-child(3) {
+    transform: rotate(144deg);
+}
+
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+}
+
+nav .logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.logo img#logoImage{
+    height: 80%;
+    border-radius: 50%;
+}
+
+.logo span#logoText{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav span#year2024{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.heroSection h1{
+    font-size: 15rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    z-index: 5;
+}
+
+.heroSection span#subText{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.launchFeature{
+    width: 100%;
+    height: 80vh;
+    background-color: #598392;
+    padding: 5rem 10rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.launchFeature h2{
+    font-size: 3rem;
+    font-family: 'Syne', sans-serif;
+}
+
+.featureWrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.feature{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Archivo', sans-serif;
+}
+
+.feature h3{
+    font-size: 1.2rem;
+}
+
+.feature p{
+    color: azure;
+    font-size: 1.1rem;
+}
+
+.team{
+    width: 100%;
+    height: 80vh;
+    background-color: #01161e;
+    padding: 5rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+}
+
+.teamCard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.teamCard img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    z-index: 5;
+}
+
+.teamCard h3{
+    font-size: 1.2rem;
+    color: azure;
+    margin-bottom: 1.5rem;
+}
+
+.teamCard p{
+    color: azure;
+    font-size: 1.1rem;
+}
+
+.joinNow{
+    width: 100%;
+    height: 60vh;
+    background-color: #124559;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Archivo', sans-serif;
+    color: #EFF6E0;
+    position: relative;
+}
+
+.joinNow .bgLines {
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 5rem;
+    left: -3rem;
+    transform: rotate(50deg);
+}
+
+.joinNow .bgLines .line {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    border: 0.1rem solid #598392;
+    border-radius: 50%;
+}
+
+.joinNow .bgLines span.line:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.joinNow h2{
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.joinNow p{
+    font-size: 1.1rem;
+    width: 48%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.joinNow button{
+    padding: 0.8rem 1rem;
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+}
+
+.queries{
+    width: 100%;
+    height: 90vh;
+    background-color: #01161e;
+    padding: 5rem 8rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Archivo', sans-serif;
+    color: #EFF6E0;
+    position: relative;
+}
+
+.queries h1{
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+}
+
+.queriesBox{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 5rem;
+}
+
+.box h4{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.box p{
+    font-size: 1rem;
+}
+
+.subscribe{
+    width: 100%;
+    height: 60vh;
+    background-color: #AEC3B0;
+    padding: 5rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Archivo', sans-serif;
+    color: #000;
+    position: relative;
+}
+
+.subscribe h1{
+    font-size: 3.5rem;
+    font-family: 'Syne', sans-serif;
+}
+
+.subscribe p{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 50%;
+    line-height: 1.3rem;
+}
+
+.subscribe .subscribeBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.subscribeBox input[type="gmail"]{
+    outline: none;
+    background-color: #82a285;
+    border: none;
+    padding: 1rem 1.4rem;
+    width: 65%;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+.subscribeBox input::placeholder{
+    color: #000;
+}
+
+.subscribeBox button[type="submit"]{
+    outline: none;
+    background-color: #01161e;
+    border: none;
+    padding: 1rem 1.4rem;
+    width: 30%;
+    color: #AEC3B0;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+}
+
+.subscribe .bgLines {
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 3.5rem;
+    left: -3rem;
+    transform: rotate(50deg);
+}
+
+.subscribe .bgLines .line {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    border: 0.1rem solid #000;
+    border-radius: 50%;
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #01161e;
+    color: #EFF6E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Archivo', sans-serif;
+}
+
+.footer .socialIcon{
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.socialIcon i{
+    font-size: 2rem;
+}
+
+
+.footer h4{
+    margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width:480px){
+    .heroSection h1{
+        font-size: 6rem;
+    }
+    .heroSection{
+        padding: 1rem;
+        height: 80vh;
+        overflow: hidden;
+    }
+    nav{
+        padding: 1rem;
+    }
+    .logo span#logoText{
+        font-size: 1.1rem;
+    }
+    .logo img#logoImage{
+        height: 100%;
+    }
+    nav span#year2024{
+        font-size: 1.1rem;
+    }
+    .launchFeature{
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    
+    .launchFeature h2{
+        font-size: 2rem;
+    }
+    
+    .featureWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .feature{
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .feature h3{
+        font-size: 1.2rem;
+    }
+    .team{
+        height: auto;
+        padding: 4rem 0;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+    }    
+    .teamCard img{
+        margin-bottom: 1.2rem;
+    }
+    
+    .teamCard h3{
+        margin-bottom: 1rem;
+    }
+    
+    .teamCard p{
+        color: azure;
+        font-size: 1.1rem;
+    }
+    .joinNow{
+        width: 100%;
+        height: 40vh;
+        padding: 2rem;
+    }    
+    .joinNow h2{
+        margin-bottom: 1.8rem;
+    }
+    
+    .joinNow p{
+        width: 100%;
+        margin-bottom: 1.4rem;
+    }
+    .queries{
+        height: auto;
+        padding: 4rem 3rem;
+    }
+    
+    .queries h1{
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+    }
+    
+    .queriesBox{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .box h4{
+        margin-bottom: 1.2rem;
+    }
+    .subscribe{
+        padding: 1.2rem;
+        justify-content: center;
+        gap: 1.4rem;
+        height: 50vh;
+    }
+    .subscribe h1{
+        z-index: inherit;
+    }
+    .subscribe p{
+        width: 90%;
+        z-index: 12;
+    }
+    
+    .subscribe .subscribeBox{
+        flex-direction: column;
+        width: 90vw;
+        gap: 1rem;
+        z-index: 12;
+    }
+    
+    .subscribeBox input[type="gmail"]{
+        padding: 1.2rem 1.6rem;
+        width: 90%;
+    }
+    
+    .subscribeBox button[type="submit"]{
+        padding: 1.2rem 1.6rem;
+        width: 50%;
+    }
+    .footer{
+        height: 30vh;
+    }
+}
