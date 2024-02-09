@@ -378,7 +378,7 @@ nav span#year2024{
     margin-bottom: 0.8rem;
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
     .heroSection h1{
         font-size: 6rem;
     }
