@@ -411,7 +411,7 @@ nav span#year2024{
     .featureWrapper{
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
+        justify-content: space-between;
     }
     
     .feature{
@@ -420,8 +420,12 @@ nav span#year2024{
     }
     
     .feature h3{
+        font-size: 1.4rem;
+    }
+    .feature p{
         font-size: 1.2rem;
     }
+    
     .team{
         height: auto;
         padding: 4rem 0;
